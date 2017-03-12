@@ -3,3 +3,4 @@ venv
 *~
 .DS_Store
 ignore
+angular-flask/angular_flask/lib
