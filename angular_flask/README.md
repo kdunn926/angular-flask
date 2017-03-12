@@ -12,17 +12,22 @@ Be sure to run the following prior to deploying or the app will fail:
 
     https://cloud.google.com/sdk/docs/
 
+
 2. Authorize the SDK for your Google account:
 
 
     $ gcloud init
+
 
 3. Create a new project on Google Cloud:
 
 
     https://console.cloud.google.com/home/dashboard
 
+
 4. Deploy the application
 
 
     $ gcloud app deploy app.yaml --project <YOUR PROJECT NAME>
+
+
