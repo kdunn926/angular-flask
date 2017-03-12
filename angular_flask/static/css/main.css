@@ -11,8 +11,12 @@
 	font-weight: bold;
 }
 
+#mainmast {
+    background:url(/static/img/eu-cover-gray.png) no-repeat top center;
+}
+
 .header-section {
-	padding: 50px 0;
+	padding: 10px 0;
 	background: #222;
 	position: absolute;
 	top: 40px;

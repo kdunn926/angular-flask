@@ -1,29 +1,24 @@
 'use strict';
 
-angular.module('AngularFlask', ['angularFlaskServices'])
+angular.module('EducationUnited', ['angularFlaskServices'])
 	.config(['$routeProvider', '$locationProvider',
 		function($routeProvider, $locationProvider) {
 		$routeProvider
 		.when('/', {
-			templateUrl: 'static/partials/landing.html',
+			templateUrl: 'static/partials/index.html',
 			controller: IndexController
 		})
-		.when('/about', {
-			templateUrl: 'static/partials/about.html',
+		.when('/mission', {
+			templateUrl: 'static/partials/mission.html',
 			controller: AboutController
 		})
-		.when('/post', {
-			templateUrl: 'static/partials/post-list.html',
-			controller: PostListController
+		.when('/projects', {
+			templateUrl: 'static/partials/projects.html',
+			controller: AboutController
 		})
-		.when('/post/:postId', {
-			templateUrl: '/static/partials/post-detail.html',
-			controller: PostDetailController
-		})
-		/* Create a "/blog" route that takes the user to the same place as "/post" */
-		.when('/blog', {
-			templateUrl: 'static/partials/post-list.html',
-			controller: PostListController
+		.when('/people', {
+			templateUrl: 'static/partials/people.html',
+			controller: AboutController
 		})
 		.otherwise({
 			redirectTo: '/'
